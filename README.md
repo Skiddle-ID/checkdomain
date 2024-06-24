@@ -2,6 +2,9 @@
 It's just a Cloudflare worker
 This worker fetches from [Skiddle-ID/blocklist](https://github.com/Skiddle-ID/blocklist), and make it easy to used and search to massive domains
 
+Alt API /w Real-time Update : https://nawalacheck.skiddle.id/
+*NEW API* All API Request is same as below
+
 ### Make a Simple request
 **cURL**
 ```
