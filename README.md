@@ -18,7 +18,7 @@ example.com: Not Blocked!
 ```
 
 ### Batch Search domains
-You can use the *domains* parameter to batch search domains, **PLEASE ONLY SEARCH UPTO 30 DOMAINS AT A TIME, THE CF WORKER CURRENTLY CAN BARELY PROCESS MORE THAN 30 DOMAINS AT ONCE**
+You can use the *domains* parameter to batch search domains, **PLEASE ONLY SEARCH UPTO 30 DOMAINS AT A TIME, THE CF WORKER CURRENTLY CAN BARELY PROCESS MORE THAN 30 DOMAINS AT ONCE** *Used New API Links above for more Robust Batch Search*
 **cURL**
 ```
 curl -X GET 'https://check.skiddle.id?domains=example.com,reddit.com'
