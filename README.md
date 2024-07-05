@@ -9,7 +9,7 @@ Alt API /w Real-time Update : https://api.skiddle.id/block/
 ### Make a Simple request
 **cURL**
 ```
-curl -X GET 'https://check.skiddle.id?domain=example.com'
+curl -X GET 'https://api.skiddle.id/block/?domain=example.com'
 ```
 
 Expected output:
@@ -18,11 +18,11 @@ example.com: Not Blocked!
 ```
 
 ### Batch Search domains
-You can use the *domains* parameter to batch search domains, **PLEASE ONLY SEARCH UPTO 30 DOMAINS AT A TIME, THE CF WORKER CURRENTLY CAN BARELY PROCESS MORE THAN 30 DOMAINS AT ONCE** *Used New API Links above for more Robust Batch Search*
+You can use the *domains* parameter to batch search domains, **PLEASE ONLY SEARCH UPTO 30 DOMAINS AT A TIME, ~~THE CF WORKER CURRENTLY CAN BARELY PROCESS MORE THAN 30 DOMAINS AT ONCE~~** *Used New API Links above for more Robust Batch Search*
 
 **cURL**
 ```
-curl -X GET 'https://check.skiddle.id?domains=example.com,reddit.com'
+curl -X GET 'https://api.skiddle.id/block/?domains=example.com,reddit.com'
 ```
 
 Expected output:
@@ -36,7 +36,7 @@ for people who want to use this "API", you can use the json parameter
 
 **cURL**
 ```
-curl -X GET 'https://check.skiddle.id?domain=example.com&json=true'
+curl -X GET 'https://api.skiddle.id/block/?domain=example.com&json=true'
 ```
 
 Expected output:
@@ -48,25 +48,12 @@ Expected output:
 
 **cURL**
 ```
-curl -X GET 'https://check.skiddle.id?domains=example.com,reddit.com&json=true'
+curl -X GET 'https://api.skiddle.id/block/?domains=example.com,reddit.com&json=true'
 ```
 
 Expected output:
 ```
 {"example.com":{"blocked":false},"reddit.com":{"blocked":true}}
-```
-
-## Force Refresh
-this is NOT needed at all since it terminates cache if its not used for an hour or so; i honestly dont know!. this is here if you see it not picking up a new blocked domain
-
-**cURL**
-```
-curl -X GET 'https://check.skiddle.id?refresh=true'
-```
-
-Expected output:
-```
-Cache Refreshed!
 ```
 
 # Credits
