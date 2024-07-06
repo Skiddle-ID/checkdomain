@@ -2,7 +2,7 @@
 It's just a Cloudflare worker
 This worker fetches from [Skiddle-ID/blocklist](https://github.com/Skiddle-ID/blocklist), and make it easy to used and search to massive domains
 
-New API /w Real-time Update : https://api.skiddle.id/block/
+*New API /w Real-time Update is Up.*
 
 **Ready to used** : https://nawalacheck.skiddle.id/ (There is no limit for now, it can only process 1000 list per request)
 
@@ -11,7 +11,7 @@ Email me here jeff@skiddle.id if you need the access, since my system will auto 
 ### Make a Simple request
 **cURL**
 ```
-curl -X GET 'https://api.skiddle.id/block/?domain=example.com'
+curl -X GET 'https://check.skiddle.id/?domain=example.com'
 ```
 
 Expected output:
@@ -24,7 +24,7 @@ You can use the *domains* parameter to batch search domains, **PLEASE ONLY SEARC
 
 **cURL**
 ```
-curl -X GET 'https://api.skiddle.id/block/?domains=example.com,reddit.com'
+curl -X GET 'https://check.skiddle.id/?domains=example.com,reddit.com'
 ```
 
 Expected output:
@@ -38,7 +38,7 @@ for people who want to use this "API", you can use the json parameter
 
 **cURL**
 ```
-curl -X GET 'https://api.skiddle.id/block/?domain=example.com&json=true'
+curl -X GET 'https://check.skiddle.id/?domain=example.com&json=true'
 ```
 
 Expected output:
@@ -50,7 +50,7 @@ Expected output:
 
 **cURL**
 ```
-curl -X GET 'https://api.skiddle.id/block/?domains=example.com,reddit.com&json=true'
+curl -X GET 'https://check.skiddle.id/?domains=example.com,reddit.com&json=true'
 ```
 
 Expected output:
