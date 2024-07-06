@@ -3,9 +3,8 @@ It's just a Cloudflare worker
 This worker fetches from [Skiddle-ID/blocklist](https://github.com/Skiddle-ID/blocklist), and make it easy to used and search to massive domains
 
 New API /w Real-time Update : https://api.skiddle.id/block/
-**Ready to used** : https://nawalacheck.skiddle.id/ (There is no limit for now, it can only process 1000 list per request)
 
-**NEW API** Request is same as below
+**Ready to used** : https://nawalacheck.skiddle.id/ (There is no limit for now, it can only process 1000 list per request)
 
 ### Make a Simple request
 **cURL**
