@@ -5,7 +5,8 @@ This worker fetches from [Skiddle-ID/blocklist](https://github.com/Skiddle-ID/bl
 New API /w Real-time Update : https://api.skiddle.id/block/
 
 **Ready to used** : https://nawalacheck.skiddle.id/ (There is no limit for now, it can only process 1000 list per request)
-Email me if you need the access, since my system will auto block IP if spam request detected.
+
+Email me here jeff@skiddle.id if you need the access, since my system will auto block IP if spam request detected.
 
 ### Make a Simple request
 **cURL**
