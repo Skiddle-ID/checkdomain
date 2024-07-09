@@ -6,7 +6,7 @@ This worker fetches from [Skiddle-ID/blocklist](https://github.com/Skiddle-ID/bl
 
 **Ready to used** : https://nawalacheck.skiddle.id/ (There is no limit for now, it can only process 1000 list per request)
 
-Email me here jeff@skiddle.id if you need the access, since my system will auto block IP if spam request detected.
+Auto Block IP is being used if spam request detected it will permanently blocked. Make new issue if you need your IP to be unblocked.
 
 ### Make a Simple request
 **cURL**
