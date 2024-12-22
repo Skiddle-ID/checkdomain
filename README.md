@@ -1,62 +1,75 @@
-# checkdomain internet positif
-It's just a Cloudflare worker
-This worker fetches from [Skiddle-ID/blocklist](https://github.com/Skiddle-ID/blocklist), and make it easy to used and search to massive domains
+## Checkdomain Internet Positif Worker
+This document describes the Checkdomain Internet Positif Cloudflare worker, a tool designed to fetch domain blocking status from the [Skiddle-ID/blocklist](https://github.com/Skiddle-ID/blocklist). It facilitates easy usage and domain searches, even for large batches.
 
-*New API /w Real-time Update is Up.*
+### Current Situation
+The free API will remain supported until **December 31, 2023**. Starting **January 1, 2024**, a Private API option will be available.
 
-**Ready to used** : https://nawalacheck.skiddle.id/ (There is no limit for now, it can only process 1000 list per request)
+---
 
-Auto Block IP is being used if spam request detected it will permanently blocked. Make new issue if you need your IP to be unblocked.
+### Making a Simple Request
+You can check the blocking status of a single domain with the following cURL command:
 
-### Make a Simple request
-**cURL**
-```
+**cURL Command:**
+```bash
 curl -X GET 'https://check.skiddle.id/?domain=example.com'
 ```
 
-Expected output:
+**Expected Output:**
 ```
 example.com: Not Blocked!
 ```
 
-### Batch Search domains
-You can use the *domains* parameter to batch search domains, **PLEASE ONLY SEARCH UPTO 30 DOMAINS AT A TIME, ~~THE CF WORKER CURRENTLY CAN BARELY PROCESS MORE THAN 30 DOMAINS AT ONCE~~** *Used New API Links above for more Robust Batch Search*
+---
 
-**cURL**
-```
+### Batch Search for Domains
+Batch search functionality allows you to query multiple domains simultaneously. Note the following restrictions:
+- **Maximum Domains:** Only search up to **30 domains** at a time. 
+- **API Update:** Use new API links for more robust batch searches.
+
+**cURL Command:**
+```bash
 curl -X GET 'https://check.skiddle.id/?domains=example.com,reddit.com'
 ```
 
-Expected output:
+**Expected Output:**
 ```
 example.com: Not Blocked!
 reddit.com: Blocked!
 ```
 
-## Json Output
-for people who want to use this "API", you can use the json parameter
+---
 
-**cURL**
-```
+### JSON Output
+This worker also supports JSON output for easier integration with other tools and scripts.
+
+#### Single Domain
+For a single domain, append the `json=true` parameter to the request.
+
+**cURL Command:**
+```bash
 curl -X GET 'https://check.skiddle.id/?domain=example.com&json=true'
 ```
 
-Expected output:
-```
+**Expected Output:**
+```json
 {"example.com":{"blocked":false}}
 ```
 
-### For batch, the output is abit different
+#### Batch Domains
+For multiple domains, the JSON output structure is slightly different. Use the `domains` parameter along with `json=true`.
 
-**cURL**
-```
+**cURL Command:**
+```bash
 curl -X GET 'https://check.skiddle.id/?domains=example.com,reddit.com&json=true'
 ```
 
-Expected output:
-```
+**Expected Output:**
+```json
 {"example.com":{"blocked":false},"reddit.com":{"blocked":true}}
 ```
 
-# Credits
-Thanks to [LepasID](https://github.com/lepasid) by [BebasID](https://github.com/bebasid)
+---
+
+### Credits
+Special thanks to [LepasID](https://github.com/lepasid) and [BebasID](https://github.com/bebasid) for their contributions to this project.
+
