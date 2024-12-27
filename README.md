@@ -4,6 +4,7 @@ This document describes the Checkdomain Internet Positif Cloudflare worker, a to
 ### Current Situation
 The free API will remain supported until **December 31, 2023**. Starting **January 1, 2024**, a Private API option will be available.
 
+**Ready to used** : https://nawalacheck.skiddle.id/ (Rate-limit is On)
 ---
 
 ### Making a Simple Request
