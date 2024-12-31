@@ -2,9 +2,12 @@
 This document describes the Checkdomain Internet Positif Cloudflare worker, a tool designed to fetch domain blocking status from the [Skiddle-ID/blocklist](https://github.com/Skiddle-ID/blocklist). It facilitates easy usage and domain searches, even for large batches.
 
 ### Current Situation
-The free API will remain supported until **~~December 31, 2024~~**. Starting **January 10, 2025**, a Private API option will be available.
+The previous version of the API used Cloudflare Workers to load the blocklist, but its large size made it unsuitable for free hosting plans. While modifications have been made, they remain closed source. The Domain Checker frontend is open source and publicly available.
 
-**Ready to used** : https://nawalacheck.skiddle.id/ ([It's Open Source](https://github.com/Skiddle-ID/domainchecker))
+The free API will be hosted on a Raspberry Pi to reduce costs, with uptime subject to home internet reliability. Private and Dedicated API options are planned for Q1 2025.
+
+**Ready to use** : https://nawalacheck.skiddle.id/ ([Github Repo](https://github.com/Skiddle-ID/domainchecker))
+
 ---
 
 ### Making a Simple Request
@@ -72,5 +75,4 @@ curl -X GET 'https://check.skiddle.id/?domains=example.com,reddit.com&json=true'
 ---
 
 ### Credits
-Special thanks to [LepasID](https://github.com/lepasid) and [BebasID](https://github.com/bebasid) for their contributions to this project.
-
+Special thanks to [LepasID](https://github.com/lepasid), [BebasID](https://github.com/bebasid), and my biggest supporter [Cindy](https://mastodon.online/@JCPatravee) for their contributions and support to this project.
