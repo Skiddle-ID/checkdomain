@@ -6,7 +6,7 @@ The previous version of the API used Cloudflare Workers to load the blocklist, b
 
 The free API will be hosted on a Raspberry Pi to reduce costs, with uptime subject to home internet reliability. Private and Dedicated API options are planned for **Q1 2025**.
 
-**Ready to use** : https://nawalacheck.skiddle.id/ ([Github Repo](https://github.com/Skiddle-ID/domainchecker))
+**Ready to use** : https://skiddle.link/checkdomain ([Github Repo](https://github.com/Skiddle-ID/domainchecker))
 
 ---
 
