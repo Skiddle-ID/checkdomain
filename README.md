@@ -76,3 +76,10 @@ curl -X GET 'https://check.skiddle.id/?domains=example.com,reddit.com&json=true'
 
 ### Credits
 Special thanks to [LepasID](https://github.com/lepasid), [BebasID](https://github.com/bebasid), and my biggest supporter [Cindy](https://mastodon.online/@JCPatravee) for their contributions and support to this project.
+
+---
+<!-- License + Copyright -->
+<p  align="center">
+  <i>© <a href="https://skiddle.id">Skiddle ID</a> 2025</i><br>
+  <i>Licensed under <a href="https://gist.github.com/arcestia/dc2bef037daf25773cb972b69d22be09">MIT</a></i>
+</p>
