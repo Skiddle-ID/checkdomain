@@ -4,7 +4,7 @@ This document describes the Checkdomain Internet Positif Cloudflare worker, a to
 ### Current Situation
 The previous version of the API used Cloudflare Workers to load the blocklist, but its large size made it unsuitable for free hosting plans. While modifications have been made, they remain closed source. The Domain Checker frontend is open source and publicly available.
 
-The free API will be hosted on a Raspberry Pi to reduce costs, with uptime subject to home internet reliability. Private and Dedicated API options are planned for **Q1 2025**.
+The free API will be hosted on a Raspberry Pi to reduce costs, with uptime subject to home internet reliability. Private and Dedicated API options are planned for **Q4 2025**.
 
 **Ready to use** : https://skiddle.link/checkdomain ([Github Repo](https://github.com/Skiddle-ID/domainchecker))
 
