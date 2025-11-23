@@ -7,7 +7,9 @@ The previous version of the API used Cloudflare Workers to load the blocklist, b
 The free API is discountinued. you can used the Ready to used Tools below. Thank you.
 Private API is available for GitHub Supporter.
 
-**Ready to use** : https://skiddle.link/checkdomain ([Github Repo](https://github.com/Skiddle-ID/domainchecker))
+**Ready to use** : ~~https://skiddle.link/checkdomain~~ ([Github Repo](https://github.com/Skiddle-ID/domainchecker))
+
+Post on my blog: [https://skiddle.id/posts/3m6cjqfkcfr23/](https://skiddle.id/posts/3m6cjqfkcfr23/)
 
 ---
 
@@ -81,6 +83,6 @@ Special thanks to [LepasID](https://github.com/lepasid), [BebasID](https://githu
 ---
 <!-- License + Copyright -->
 <p  align="center">
-  <i>© <a href="https://skiddle.id">Skiddle ID</a> 2025</i><br>
+  <i>© <a href="https://skiddle.id">Skiddle ID</a> 2024</i><br>
   <i>Licensed under <a href="https://gist.github.com/arcestia/dc2bef037daf25773cb972b69d22be09">MIT</a></i>
 </p>
