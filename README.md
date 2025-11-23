@@ -9,8 +9,10 @@ Private API is available for GitHub Supporter.
 
 **Ready to use** : ~~https://skiddle.link/checkdomain~~ ([Github Repo](https://github.com/Skiddle-ID/domainchecker))
 
-Post on my blog: [https://skiddle.id/posts/3m6cjqfkcfr23/](https://skiddle.id/posts/3m6cjqfkcfr23/)
-
+Announcement on my blog: 
+- [Penutupan Akses Publik API Checknawala
+](https://skiddle.id/posts/3m6cn7p77of2o/)
+- [The Story Behind Taking Down My Free checkdomain API](https://skiddle.id/posts/3m6cjqfkcfr23/)
 ---
 
 ### Making a Simple Request
