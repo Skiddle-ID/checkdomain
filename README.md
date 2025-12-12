@@ -7,6 +7,8 @@ The previous version of the API used Cloudflare Workers to load the blocklist, b
 The free API is **discontinued**. you can used the Ready to used Tools below. Thank you.
 Private API is available for GitHub Supporter.
 
+Notes: Public API is open temporary, GitHub Supporter will have early notice if I closed again. Thanks
+
 **Ready to use** : ~~https://skiddle.link/checkdomain~~ ([Github Repo](https://github.com/Skiddle-ID/domainchecker))
 
 Announcement on my blog: 
